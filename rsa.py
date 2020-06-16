@@ -4,7 +4,6 @@ from extended_euclides import solve_equation
 def find_key(p, q, fi):
     # Fi from https://www.alpertron.com.ar/ECM.HTM
     n = p * q
-    # fi = 2489674622383462608#euler2(n)
     e = 2
     while True:
         if nwd(e, fi) == 1:
@@ -53,7 +52,6 @@ def decrypt_rsa_version_2(p, q, dp, dq, qi, m):
     return m2 + q * h
 
 def solve_rsa(p, q, fi, lambda_, number_to_encrypt):
-    # TODO: Check if that is true
     fi = (p-1) * (q-1)
     # Euler
     print("-------------------------------------------------------------------")

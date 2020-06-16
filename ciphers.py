@@ -132,10 +132,9 @@ def feistel(plain, keys, n_rounds, f):
 #      "AĄB CĆDEĘ FGHI JKLŁMNŃOÓPQRSŚT UVW XYZŹŻA ĄBCĆDEĘ FGHIJK"))
 
 # print(kwadratowy("SZYFR KWADRATOWY NAZYWANY JEST TAKŻE MACIERZOWYM", 3))
-
 # print(kolumnowy("PIERWSZYM PARAMETREM SZYFRU KOLUMNOWEGO JEST LICZBA", "JIHGFĘEDĆCBĄA"))
 # print(kolumnowy("TO_JEST_MOJA_UKRYTA_WIADOMOŚĆ", "JIFGHĘEDĆCBĄA"))
-print(feistel("TEN SZYFR JEST BEZPIECZNIEJSZY ALE WYMAGA DŁUGICH KLUCZY",\
-       4 * ["AĄB CĆDEĘ FGHI JKLŁMNŃOÓPQRSŚT UVW XYZŹŻA ĄBCĆDEĘ FGHIJK"]\
-         + ["BZP CĆDEĘ FGHI JKLŁMNŃOÓPQRSŚT TBV XYZŹŻA ĄBCĆDEĘ FGHIJK"],\
-              5, lambda c, k: sum_words(c, k)))
+# print(feistel("TEN SZYFR JEST BEZPIECZNIEJSZY ALE WYMAGA DŁUGICH KLUCZY",\
+#        4 * ["AĄB CĆDEĘ FGHI JKLŁMNŃOÓPQRSŚT UVW XYZŹŻA ĄBCĆDEĘ FGHIJK"]\
+#          + ["BZP CĆDEĘ FGHI JKLŁMNŃOÓPQRSŚT TBV XYZŹŻA ĄBCĆDEĘ FGHIJK"],\
+#               5, lambda c, k: sum_words(c, k)))

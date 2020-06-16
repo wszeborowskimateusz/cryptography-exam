@@ -1,3 +1,5 @@
+from polynomials import x, pol_div
+
 def euclides(a, b):
     x, x_prim, y, y_prim = 1, 0, 0, 1
     while b != 0:
@@ -28,5 +30,17 @@ def solve_equation(a, b, n):
             print(f"Solution: x = {x0} +- k * {n//d}")
             return x0
 
-# solve_equation(4238479232, 12, 745947598363612)
-# solve_equation(868224, 1, 1064359)
+def simple_euclides_poli(p1,p2, mod):
+    while p1 != 0 and p2 != 0:
+        c = p2
+        _, r = pol_div(p1,p2, mod)
+        p2 = r
+        p1 = c
+    return p1 + p2
+
+# p1 is in <> and inverse of p2 we look for
+def find_inverse_poli(p1,p2,mod):
+    p, r = pol_div(p1, p2, mod)
+    return (-1 * p) / r
+
+# print(find_inverse_poli(x**16 + x + 1, x**4+x+1, 2))
