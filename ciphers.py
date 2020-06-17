@@ -1,5 +1,7 @@
 import random
 
+# Dopełniamy spacjami (możliwe też że kolejnymi literami alfabetu)
+
 alphabet = "AĄBCĆDEĘFGHIJKLŁMNŃOÓPQRSŚTUVWXYZŹŻ"
 
 alphabet_with_space = "AĄBCĆDEĘFGHIJKLŁMNŃOÓPQRSŚTUVWXYZŹŻ "
@@ -44,11 +46,11 @@ def plotkowy(plain, h):
             index -=1
     return "".join(subciphers)
 
-def kwadratowy(plain, w, filler=""):
+def kwadratowy(plain, w, filler=alphabet):
     if filler == '':
         filler = "".join([random.choice(alphabet) for _ in range(((w * w) - 1))])
 
-    print(f"filler: {filler}")
+    # print(f"filler: {filler}")
     subciphers = 3 * [""]
     index = 0
     counter = 0
@@ -65,7 +67,7 @@ def kwadratowy(plain, w, filler=""):
     # Need to fill
     i = 0
     while counter < w * w:
-        subciphers[index] += filler[i]
+        subciphers[index] += filler[i % len(filler)]
         i+=1
         counter += 1
         if counter % w == 0 and index < w:
@@ -131,7 +133,7 @@ def feistel(plain, keys, n_rounds, f):
 # print(one_time_code("TEN SZYFR JEST BEZPIECZNIEJSZY ALE WYMAGA DŁUGICH KLUCZY",\
 #      "AĄB CĆDEĘ FGHI JKLŁMNŃOÓPQRSŚT UVW XYZŹŻA ĄBCĆDEĘ FGHIJK"))
 
-# print(kwadratowy("SZYFR KWADRATOWY NAZYWANY JEST TAKŻE MACIERZOWYM", 3))
+print(kwadratowy("SZYFR KWADRATOWY NAZYWANY JEST TAKŻE MACIERZOWYM", 3))
 # print(kolumnowy("PIERWSZYM PARAMETREM SZYFRU KOLUMNOWEGO JEST LICZBA", "JIHGFĘEDĆCBĄA"))
 # print(kolumnowy("TO_JEST_MOJA_UKRYTA_WIADOMOŚĆ", "JIFGHĘEDĆCBĄA"))
 # print(feistel("TEN SZYFR JEST BEZPIECZNIEJSZY ALE WYMAGA DŁUGICH KLUCZY",\

@@ -58,9 +58,19 @@ def find_k(perm):
     cycle_lengths = [len(x) for x in cycles[1]]
     return lcm(*cycle_lengths)
 
+def get_perm_from_cycles(n, *cycles):
+    perms = [x + 1 for x in list(range(n))]
+    shifteds = []
+    for cycle in cycles:
+        for index, elem in enumerate(cycle):
+            perms[elem - 1] = cycle[(index + 1)% len(cycle)]
+    return perms
 
-print(perm_pow([4, 2, 1, 3, 5], -2))
 
-print(list(mul([4, 2, 1, 3, 5], [3, 2, 1, 4, 5], [5, 4, 3, 2, 1])))
+# print(perm_pow([4, 2, 1, 3, 5], -2))
 
-print(find_k([5, 8, 10, 3, 1, 2, 9, 6, 4, 7]))
+# print(list(mul([4, 2, 1, 3, 5], [3, 2, 1, 4, 5], [5, 4, 3, 2, 1])))
+
+# print(find_k([5, 8, 10, 3, 1, 2, 9, 6, 4, 7]))
+
+# print(perm_pow(get_perm_from_cycles(9, (1,3, 9,7), (2,4,5)), 2))

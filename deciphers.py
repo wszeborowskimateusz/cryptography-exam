@@ -163,7 +163,7 @@ def decipher_feistel(cipher, keys, n_rounds, f):
 
 # print(decipher_plotkowy("SROWN   TŻOZF ŁTOYZAYBŁJŻWSAOYNŚIYPK NYU RTC", 3))
 
-# print(decipher_kwadratowy("SFKZRWY ADTYRO AWNAWYZA YNJE KSTŻTAE CRMIZAEOWTŚYNÓMKÓ", 3))
+# print(decipher_kwadratowy("SFKZRWY ADTYRO AWNAWYZA YNJE KSTŻTAE CRMIZAEOWACYĄĆMBD", 3))
 # print(decipher_kolumnowy("RROAFGAPYEB ZWZMSOCY NIZMMLSEU WRLTRTOSEEKEIM JPAU ", "JIHGFĘEDĆCBĄA"))
 # print(decipher_feistel("QASTOHŁYPŻÓŃŻEŁPVRĘMĘQEGUĘŹ VŹJOMĆUÓŁCJXSBRQEĆKOTĘSDOXMF",\
 #     4 * ["AĄB CĆDEĘ FGHI JKLŁMNŃOÓPQRSŚT UVW XYZŹŻA ĄBCĆDEĘ FGHIJK"]\
