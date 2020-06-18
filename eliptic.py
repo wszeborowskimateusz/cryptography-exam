@@ -51,6 +51,7 @@ def add_non_zero_points(a, b, n, p1, p2):
     y3 = ((p1.x - x3) * lambda_ - p1.y) % n
     return ECPoint(x3, y3)
 
-# print(zlicz_punkty(1, 1, 1803679))
+# print(zlicz_punkty(-10, -6, 13))
 
-print(add_non_zero_points(2, 5, 2051417, ECPoint(855702, 794259), ECPoint(1872044, 1219646)))
+# print(add_non_zero_points(2, 5, 2051417, ECPoint(855702, 794259), ECPoint(1872044, 1219646)))
+print(add_non_zero_points(2, 5, 2051417, ECPoint(7840, 878140), ECPoint(1872044, 1219646)))

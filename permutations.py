@@ -73,4 +73,4 @@ def get_perm_from_cycles(n, *cycles):
 
 # print(find_k([5, 8, 10, 3, 1, 2, 9, 6, 4, 7]))
 
-# print(perm_pow(get_perm_from_cycles(9, (1,3, 9,7), (2,4,5)), 2))
+# print(perm_pow(get_perm_from_cycles(7, (1,2,3,4),(5,6,7)), 2))

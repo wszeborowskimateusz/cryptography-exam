@@ -37,10 +37,3 @@ def simple_euclides_poli(p1,p2, mod):
         p2 = r
         p1 = c
     return p1 + p2
-
-# p1 is in <> and inverse of p2 we look for
-def find_inverse_poli(p1,p2,mod):
-    p, r = pol_div(p1, p2, mod)
-    return (-1 * p) / r
-
-# print(find_inverse_poli(x**16 + x + 1, x**4+x+1, 2))
