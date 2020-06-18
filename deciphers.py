@@ -161,9 +161,9 @@ def decipher_feistel(cipher, keys, n_rounds, f):
 # print(decipher_one_time_code("TĘO UĄĄLX ÓŁŻB LOIĄURPMBZVAKQQ UĘA SUKŹFA ENXKMGN PRBLGG",\
 #      "AĄB CĆDEĘ FGHI JKLŁMNŃOÓPQRSŚT UVW XYZŹŻA ĄBCĆDEĘ FGHIJK"))
 
-# print(decipher_plotkowy("SROWN   TŻOZF ŁTOYZAYBŁJŻWSAOYNŚIYPK NYU RTC", 3))
+print(decipher_plotkowy("ZSBTYZBPEÓHRŃ CP LHDDĆQŚEIJĘĘPVĄD NUOLX Ą  VB ŃŃESVAŹŚ VŹOÓ IOFPĆŁŚO CF VGJB ĆĄMKITCUD ĆVPYYMŚ JOM CSJVPM FFOŹJMD ĆGKŃŃŃ V D ŃDŹ", 3))
 
-# print(decipher_kwadratowy("SFKZRWY ADTYRO AWNAWYZA YNJE KSTŻTAE CRMIZAEOWACYĄĆMBD", 3))
+print(decipher_kwadratowy("ZSBTDNOXOM C UL YZBPĄ BŃSJVP V ŃEÓHREVŹ M FFSAŚVŃ CPŹÓIFOŹJMO OP LHDĆŚ FD ĆGŁOC DĆQŚVJ ĄKŃŃŃGBĆMEIJĘKTU  V DICDĆĘPVĄVYM  ŃDŹPYŚJAĆFJĄDGKBEHLCĘIŁ", 4))
 # print(decipher_kolumnowy("RROAFGAPYEB ZWZMSOCY NIZMMLSEU WRLTRTOSEEKEIM JPAU ", "JIHGFĘEDĆCBĄA"))
 # print(decipher_feistel("QASTOHŁYPŻÓŃŻEŁPVRĘMĘQEGUĘŹ VŹJOMĆUÓŁCJXSBRQEĆKOTĘSDOXMF",\
 #     4 * ["AĄB CĆDEĘ FGHI JKLŁMNŃOÓPQRSŚT UVW XYZŹŻA ĄBCĆDEĘ FGHIJK"]\

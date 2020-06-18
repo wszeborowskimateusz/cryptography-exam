@@ -51,7 +51,7 @@ def decrypt_rsa_version_2(p, q, dp, dq, qi, m):
     h = ((m1 - m2) * qi) % p
     return m2 + q * h
 
-def solve_rsa(p, q, fi, lambda_, number_to_encrypt):
+def solve_rsa(p, q, lambda_, number_to_encrypt):
     fi = (p-1) * (q-1)
     # Euler
     print("-------------------------------------------------------------------")
@@ -83,4 +83,4 @@ def solve_rsa(p, q, fi, lambda_, number_to_encrypt):
     print(f"Decrypted: {decrypt_rsa(n_c, d_c, encrypted_c)}")
 
 
-solve_rsa(2045101337, 1217384479, 2489674622383462608, 1244837311191731304, 1482490597098018112)
+solve_rsa(138332377, 278600033, 4817425547529504, 1914654)

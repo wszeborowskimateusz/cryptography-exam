@@ -51,7 +51,7 @@ def kwadratowy(plain, w, filler=alphabet):
         filler = "".join([random.choice(alphabet) for _ in range(((w * w) - 1))])
 
     # print(f"filler: {filler}")
-    subciphers = 3 * [""]
+    subciphers = w * [""]
     index = 0
     counter = 0
     for c in plain:
@@ -133,10 +133,17 @@ def feistel(plain, keys, n_rounds, f):
 # print(one_time_code("TEN SZYFR JEST BEZPIECZNIEJSZY ALE WYMAGA DŁUGICH KLUCZY",\
 #      "AĄB CĆDEĘ FGHI JKLŁMNŃOÓPQRSŚT UVW XYZŹŻA ĄBCĆDEĘ FGHIJK"))
 
-print(kwadratowy("SZYFR KWADRATOWY NAZYWANY JEST TAKŻE MACIERZOWYM", 3))
+# print(kwadratowy("SZYFR KWADRATOWY NAZYWANY JEST TAKŻE MACIERZOWYM", 3))
 # print(kolumnowy("PIERWSZYM PARAMETREM SZYFRU KOLUMNOWEGO JEST LICZBA", "JIHGFĘEDĆCBĄA"))
 # print(kolumnowy("TO_JEST_MOJA_UKRYTA_WIADOMOŚĆ", "JIFGHĘEDĆCBĄA"))
 # print(feistel("TEN SZYFR JEST BEZPIECZNIEJSZY ALE WYMAGA DŁUGICH KLUCZY",\
 #        4 * ["AĄB CĆDEĘ FGHI JKLŁMNŃOÓPQRSŚT UVW XYZŹŻA ĄBCĆDEĘ FGHIJK"]\
 #          + ["BZP CĆDEĘ FGHI JKLŁMNŃOÓPQRSŚT TBV XYZŹŻA ĄBCĆDEĘ FGHIJK"],\
 #               5, lambda c, k: sum_words(c, k)))
+
+
+print(plotkowy("ZDO SNMUBO LTXC YĄS Z JVBBV PŃPŃEEMSÓV AHŹFŚR FVŃŹOO ÓŹ CIJOPFMP ĆDŁLŚ OH ĆCDFG DVKGĆJŃBQ ŃĆŚĄŃMEK IITVCJU DĘ DĆĘV PPYŃYVMDŚĄ ŹJ"\
+    ,3))
+
+print(kwadratowy("ZDO SNMUBO LTXC YĄS Z JVBBV PŃPŃEEMSÓV AHŹFŚR FVŃŹOO ÓŹ CIJOPFMP ĆDŁLŚ OH ĆCDFG DVKGĆJŃBQ ŃĆŚĄŃMEK IITVCJU DĘ DĆĘV PPYŃYVMDŚĄ ŹJ",\
+    4))

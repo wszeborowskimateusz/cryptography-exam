@@ -23,5 +23,5 @@ def vigenere(plain, k):
 
     return cipher
 
-print(przesuwajacy("SZYFR␣CEZARA␣JEST␣PRZYKŁADEM␣SZYFRU␣PRZESUWAJĄCEGO", 2))
-print(vigenere("TEN␣SZYFR␣JEST␣PODOBNY␣DO␣SZYFRU␣Z␣KODEM␣JEDNORAZOWYM", "AĄB"))
+# print(przesuwajacy("SZYFR␣CEZARA␣JEST␣PRZYKŁADEM␣SZYFRU␣PRZESUWAJĄCEGO", 2))
+print(vigenere("ZDO SNMUBO LTXC YĄS Z JVBBV PŃPŃEEMSÓV AHŹFŚR FVŃŹOO ÓŹ CIJOPFMP ĆDŁLŚ OH ĆCDFG DVKGĆJŃBQ ŃĆŚĄŃMEK IITVCJU DĘ DĆĘV PPYŃYVMDŚĄ ŹJ", "GĄŚN"))

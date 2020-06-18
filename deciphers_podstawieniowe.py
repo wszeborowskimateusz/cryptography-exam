@@ -23,5 +23,5 @@ def decipher_vigenere(cipher, k):
 
     return plain
 
-print(decipher_przesuwajacy("TŻŹHŚ␣DFŻBŚB␣LFTV␣RŚŻŹŁNBĘFŃ␣TŻŹHŚW␣RŚŻFTWYBLCDFIP", 2))
-print(decipher_vigenere("TĘO␣SŹŹFS␣LEŚV␣PÓĘOCOY␣EP␣SŹŹFSW␣Z␣LPDĘŃ␣JĘĘNÓŚAŹPWZŃ", "AĄB"))
+# print(decipher_przesuwajacy("TŻŹHŚ␣DFŻBŚB␣LFTV␣RŚŻŹŁNBĘFŃ␣TŻŹHŚW␣RŚŻFTWYBLCDFIP", 2))
+print(decipher_vigenere("EEG ETNNOV ŁMJJ ZTE E KŃOIW IAXOYRŚŚHH GIRŚŻS ŹHUŻGĄ WŻ VVPÓIŚŚQ WQSŁŁ ĄO DVQNH XHQHWWUCJ AKTTAŚĘC VÓUŃÓPV XS LDZH XQPADWEQŻB RW", "GĄŚN"))
